@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,41 +13,49 @@
             font-family: 'Poppins', sans-serif;
             background-color: #121212;
             color: #ffffff;
-            padding-top: 80px; /* Отступ для контента после фиксированного хедера */
+            padding-top: 80px;
+            /* Отступ для контента после фиксированного хедера */
         }
+
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.6s ease, transform 0.6s ease;
         }
+
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
         }
+
         .testimonial-container {
             width: 100%;
             overflow: hidden;
             position: relative;
         }
+
         .testimonial-slider {
             display: flex;
             transition: transform 0.5s ease-in-out;
         }
+
         .testimonial-slide {
             width: 100%;
             flex-shrink: 0;
             text-align: center;
             display: none;
         }
+
         .testimonial-slide.active {
             display: block;
         }
     </style>
 </head>
+
 <body>
-    
+
     <!-- Header -->
-    <!-- <header class="bg-gray-900 shadow-md fixed w-full z-10 top-0">
+    <header class="bg-gray-900 shadow-md fixed w-full z-10 top-0">
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
             <h1 class="text-xl font-bold text-white">Успешный Инвестор</h1>
             <nav>
@@ -59,51 +68,58 @@
                 </ul>
             </nav>
         </div>
-    </header> -->
+    </header>
 
     <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?finance,investment');">
+    <section class="relative h-screen flex items-center justify-center text-center bg-cover bg-center"
+        style="background-image: url('https://source.unsplash.com/1600x900/?finance,investment');">
         <div class="absolute inset-0 bg-black bg-opacity-60"></div>
         <div class="relative z-10 max-w-3xl mx-auto text-white px-6">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">Ваш путь к финансовой независимости начинается здесь!</h2>
-            <p class="text-lg md:text-xl mb-6">Я помог десяткам людей удвоить капитал – узнайте, как</p>
-            <a href="#contact" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-300 transition">Начать инвестировать</a>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Ваш путь в криптовалюте начинается здесь!</h2>
+            <p class="text-lg md:text-xl mb-6">Я помог десяткам трейдеров приумножить капитал — узнайте, как.</p>
+            <a href="#contact"
+                class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-300 transition">Начните
+                зарабатывать на крипторынке уже сегодня</a>
         </div>
     </section>
-    
+
     <!-- About Section -->
     <section id="about" class="container mx-auto py-20 flex flex-col md:flex-row items-center fade-in">
         <div class="md:w-1/2 px-6">
-            <h2 class="text-3xl font-bold mb-4">Обо мне</h2>
-            <p class="text-lg mb-4">Я начал свой путь в инвестициях более 10 лет назад, изучая финансовые рынки и стратегии долгосрочного роста капитала.</p>
+            <h2 class="text-3xl font-bold mb-4">Обо мне – Виктор Корнев</h2>
+            <p class="text-lg mb-4">Я в криптотрейдинге более 10 лет, прошёл путь от первых сделок до продвинутых
+                стратегий, которые приносят стабильную прибыль.</p>
             <ul class="list-disc pl-5 text-lg">
-                <li>Средний ROI – 35% годовых</li>
-                <li>Более 500 успешных сделок</li>
-                <li>Консультации для 100+ инвесторов</li>
+                <li>Средний ROI – 35% в месяц</li>
+                <li>Более 500 прибыльных сделок</li>
+                <li>Консультировал 100+ трейдеров и инвесторов</li>
             </ul>
         </div>
         <div class="md:w-1/2 flex justify-center mt-6 md:mt-0">
             <img src="IMG_3229-topaz.jpeg" alt="Инвестор" class="rounded-lg shadow-lg w-80 h-80 object-cover">
         </div>
     </section>
-    
+
     <!-- Case Studies Section -->
     <section id="cases" class="container mx-auto py-20 text-center fade-in">
         <h2 class="text-3xl font-bold mb-6">Кейс-стадии (Истории успеха)</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="bg-gray-800 p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">Инвестирование в технологический стартап</h3>
-                <p class="text-gray-400">Как была найдена идея, что привело к росту в 5 раз за 2 года.</p>
+                <h3 class="text-xl font-bold mb-2">Торговля на фьючерсных рынках</h3>
+                <p class="text-gray-400">Как я использовал риск-менеджмент и технический анализ, чтобы увеличить депозит
+                    в 4 раза за 6 месяцев, торгуя с кредитным плечом.</p>
                 <img src="startap.jpeg" alt="Кейс 1" class="rounded-lg mt-4">
             </div>
             <div class="bg-gray-800 p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">Покупка недвижимости под аренду</h3>
-                <p class="text-gray-400">Стратегия вложений в недвижимость с ROI 12% в год.</p>
+                <h3 class="text-xl font-bold mb-2">Межбиржевая торговля</h3>
+                <p class="text-gray-400">Пример арбитражной стратегии, которая позволила заработать на разнице цен между
+                    биржами, обеспечив стабильную прибыль без высокого риска.</p>
                 <img src="estate.jpeg" alt="Кейс 2" class="rounded-lg mt-4">
             </div>
             <div class="bg-gray-800 p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold mb-2">Инвестиции в криптовалюту</h3>
-                <p class="text-gray-400">Как были определены перспективные активы и достигнут 300% рост.</p>
+                <h3 class="text-xl font-bold mb-2">Торговля на спотовых рынках</h3>
+                <p class="text-gray-400">Как был определён момент входа в перспективные активы, что привело к росту
+                    портфеля на 300% в течение года.</p>
                 <img src="crypto.jpeg" alt="Кейс 3" class="rounded-lg mt-4">
             </div>
         </div>
@@ -115,118 +131,190 @@
         <div class="testimonial-container">
             <div id="testimonial-slider" class="testimonial-slider">
                 <div class="testimonial-slide active bg-gray-800 p-6 rounded-lg shadow-md">
-                    <p class="text-gray-300 italic">"Инвестиционные стратегии помогли мне удвоить капитал всего за год!"</p>
-                    <h4 class="mt-4 text-yellow-400 font-bold">— Иван Петров</h4>
+                    <p class="text-gray-300 italic">"Благодаря Виктору я начал разбираться в фьючерсах и уже за первый
+                        месяц увеличил депозит на 50%!"</p>
+                    <h4 class="mt-4 text-yellow-400 font-bold">— Олег Назаров</h4>
                 </div>
                 <div class="testimonial-slide bg-gray-800 p-6 rounded-lg shadow-md">
-                    <p class="text-gray-300 italic">"Благодаря грамотному подходу, я успешно вложился в недвижимость и стабильно зарабатываю!"</p>
-                    <h4 class="mt-4 text-yellow-400 font-bold">— Елена Смирнова</h4>
+                    <p class="text-gray-300 italic">"Арбитраж между биржами раньше казался сложным, но теперь это
+                        стабильный источник дохода!"</p>
+                    <h4 class="mt-4 text-yellow-400 font-bold">— Дмитрий Соколов</h4>
                 </div>
                 <div class="testimonial-slide bg-gray-800 p-6 rounded-lg shadow-md">
-                    <p class="text-gray-300 italic">"Инвестирование в криптовалюты было рискованным, но с экспертными советами я получил 300% прибыли!"</p>
-                    <h4 class="mt-4 text-yellow-400 font-bold">— Сергей Иванов</h4>
+                    <p class="text-gray-300 italic">"Виктор научил меня управлять рисками. Даже во время падения рынка я
+                        остаюсь в плюсе!"</p>
+                    <h4 class="mt-4 text-yellow-400 font-bold">— Анна Полищук</h4>
+                </div>
+                <div class="testimonial-slide bg-gray-800 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-300 italic">"Я боялся заходить в крипту, но Виктор показал мне, как входить в
+                        сделки с минимальными рисками."</p>
+                    <h4 class="mt-4 text-yellow-400 font-bold">— Андрей Гриценко</h4>
+                </div>
+                <div class="testimonial-slide bg-gray-800 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-300 italic">"После обучения у Виктора я сделал +120% на BTC, а раньше даже не
+                        понимал, как читать графики!"</p>
+                    <h4 class="mt-4 text-yellow-400 font-bold">— Сергей Романов</h4>
+                </div>
+                <div class="testimonial-slide bg-gray-800 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-300 italic">"Фьючерсная торговля всегда пугала меня, но после курса я уверенно
+                        управляю плечами и прибылью."</p>
+                    <h4 class="mt-4 text-yellow-400 font-bold">— Алексей Дубов</h4>
+                </div>
+                <div class="testimonial-slide bg-gray-800 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-300 italic">"Теперь я знаю, как зарабатывать не только на росте, но и на падении
+                        рынка!"</p>
+                    <h4 class="mt-4 text-yellow-400 font-bold">— Вадим Коваленко</h4>
+                </div>
+                <div class="testimonial-slide bg-gray-800 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-300 italic">"Виктор помог мне создать стабильную стратегию и наконец-то
+                        избавиться от эмоций в трейдинге."</p>
+                    <h4 class="mt-4 text-yellow-400 font-bold">— Мария Лисенко</h4>
+                </div>
+                <div class="testimonial-slide bg-gray-800 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-300 italic">"Я начал с $500, теперь мой депозит уже $5000. Главное — соблюдать
+                        дисциплину!"</p>
+                    <h4 class="mt-4 text-yellow-400 font-bold">— Николай Федоренко</h4>
+                </div>
+                <div class="testimonial-slide bg-gray-800 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-300 italic">"Инструменты и анализ, которые я получил здесь, помогли мне сделать
+                        +300% за 8 месяцев."</p>
+                    <h4 class="mt-4 text-yellow-400 font-bold">— Игорь Лавров</h4>
                 </div>
             </div>
         </div>
+
         <div class="mt-6">
             <button onclick="prevTestimonial()" class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-l">‹</button>
             <button onclick="nextTestimonial()" class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-r">›</button>
         </div>
     </section>
-    
-    
+
+
     <!-- FAQ Section -->
     <section id="faq" class="container mx-auto py-20 text-center fade-in">
         <h2 class="text-3xl font-bold mb-6">Часто задаваемые вопросы (FAQ)</h2>
         <div class="max-w-3xl mx-auto text-left">
             <div class="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
-                <h3 class="text-xl font-semibold text-yellow-400">Как начать инвестировать?</h3>
-                <p class="text-gray-300 mt-2">Для начала инвестиций определите свои цели, изучите базовые финансовые инструменты и выберите надёжного брокера.</p>
+                <h3 class="text-xl font-semibold text-yellow-400">Как начать торговать криптовалютой?</h3>
+                <p class="text-gray-300 mt-2">Для начала выберите надёжную биржу, изучите основы технического анализа и
+                    создайте торговую стратегию. Не торгуйте на эмоциях — следуйте чётким правилам.</p>
             </div>
             <div class="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
                 <h3 class="text-xl font-semibold text-yellow-400">Сколько нужно капитала для старта?</h3>
-                <p class="text-gray-300 mt-2">Вы можете начать с любой суммы – от нескольких тысяч рублей до крупных инвестиций. Главное – выбрать стратегию, соответствующую вашему капиталу.</p>
+                <p class="text-gray-300 mt-2">Начать можно с любой суммы — от $100 до нескольких тысяч. Главное —
+                    грамотно управлять рисками и не использовать весь депозит в одной сделке.</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
+                <h3 class="text-xl font-semibold text-yellow-400">Как минимизировать риски при трейдинге?</h3>
+                <p class="text-gray-300 mt-2">Используйте стоп-лоссы, не рискуйте более 1-2% депозита на сделку, не
+                    используйте высокое кредитное плечо без опыта и всегда следуйте торговому плану.</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
+                <h3 class="text-xl font-semibold text-yellow-400">Что выбрать: фьючерсы или спотовую торговлю?</h3>
+                <p class="text-gray-300 mt-2">Фьючерсы подходят для активной торговли и позволяют зарабатывать на
+                    падении рынка, но требуют строгого риск-менеджмента. Спотовая торговля менее рискованна и подходит
+                    для долгосрочного удержания активов.</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-md mb-4">
+                <h3 class="text-xl font-semibold text-yellow-400">Что такое межбиржевая торговля?</h3>
+                <p class="text-gray-300 mt-2">Это стратегия арбитража, при которой трейдер зарабатывает на разнице цен
+                    одного и того же актива на разных биржах. Важно учитывать комиссии и скорость вывода средств.</p>
             </div>
             <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-                <h3 class="text-xl font-semibold text-yellow-400">Какие риски и как их минимизировать?</h3>
-                <p class="text-gray-300 mt-2">Основные риски – рыночные колебания, ликвидность и инфляция. Диверсифицируйте портфель и придерживайтесь долгосрочной стратегии.</p>
+                <h3 class="text-xl font-semibold text-yellow-400">Какие основные ошибки совершают новички?</h3>
+                <p class="text-gray-300 mt-2">Торговля без стратегии, использование слишком большого кредитного плеча,
+                    отсутствие риск-менеджмента и эмоциональные сделки — главные причины потерь.</p>
             </div>
         </div>
+
 
         <!-- CTA -->
         <section id="cta" class="container mx-auto py-20 text-center fade-in">
             <h2 class="text-3xl font-bold mb-4">Начните свой путь в инвестициях</h2>
-            <p class="text-lg text-gray-300 mb-6">Получите бесплатную консультацию по инвестициям – оставьте свои контакты</p>
+            <p class="text-lg text-gray-300 mb-6">Получите бесплатную консультацию по инвестициям – оставьте свои
+                контакты</p>
             <div class="max-w-lg mx-auto bg-gray-800 p-6 rounded-lg shadow-md">
                 <form action="#" method="POST">
                     <div class="mb-4">
                         <label for="name" class="block text-yellow-400 font-semibold">Имя</label>
-                        <input type="text" id="name" name="name" class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
+                        <input type="text" id="name" name="name"
+                            class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                            required>
                     </div>
                     <div class="mb-4">
                         <label for="email" class="block text-yellow-400 font-semibold">Email</label>
-                        <input type="email" id="email" name="email" class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
+                        <input type="email" id="email" name="email"
+                            class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                            required>
                     </div>
                     <div class="mb-4">
                         <label for="phone" class="block text-yellow-400 font-semibold">Телефон</label>
-                        <input type="tel" id="phone" name="phone" class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
+                        <input type="tel" id="phone" name="phone"
+                            class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                            required>
                     </div>
-                    <button type="submit" class="w-full bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-300 transition">Записаться</button>
+                    <button type="submit"
+                        class="w-full bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-300 transition">Записаться</button>
                 </form>
-                <p class="text-sm text-gray-400 mt-4">Или подпишитесь на наш <a href="#" class="text-yellow-400 hover:underline">Telegram-канал</a></p>
+                <p class="text-sm text-gray-400 mt-4">Или подпишитесь на наш <a href="#"
+                        class="text-yellow-400 hover:underline">Telegram-канал</a></p>
             </div>
         </section>
 
         <!-- Footer Section -->
-    <footer class="bg-gray-900 text-gray-300 py-6 mt-10 text-center">
-        <div class="container mx-auto">
-            <p class="text-lg font-semibold">Контакты</p>
-            <p>Email: <a href="mailto:info@investor.com" class="text-yellow-400 hover:underline">info@investor.com</a></p>
-            <p>Телефон: <a href="tel:+1234567890" class="text-yellow-400 hover:underline">+1 (234) 567-890</a></p>
-            <div class="flex justify-center space-x-4 mt-4">
-                <a href="#" class="text-yellow-400 hover:underline">Telegram</a>
-                <a href="#" class="text-yellow-400 hover:underline">LinkedIn</a>
-                <a href="#" class="text-yellow-400 hover:underline">Facebook</a>
+        <footer class="bg-gray-900 text-gray-300 py-6 mt-10 text-center">
+            <div class="container mx-auto">
+                <p class="text-lg font-semibold">Контакты</p>
+                <p>Email: <a href="mailto:info@investor.com"
+                        class="text-yellow-400 hover:underline">info@investor.com</a></p>
+                <p>Телефон: <a href="tel:+1234567890" class="text-yellow-400 hover:underline">+1 (234) 567-890</a></p>
+                <div class="flex justify-center space-x-4 mt-4">
+                    <a href="#" class="text-yellow-400 hover:underline">Telegram</a>
+                    <a href="#" class="text-yellow-400 hover:underline">LinkedIn</a>
+                    <a href="#" class="text-yellow-400 hover:underline">Facebook</a>
+                </div>
+                <p class="mt-4 text-sm">© 2024 Успешный Инвестор. Все права защищены.</p>
+                <p class="text-xs"><a href="#" class="text-yellow-400 hover:underline">Политика конфиденциальности</a> |
+                    <a href="#" class="text-yellow-400 hover:underline">Юридическая информация</a>
+                </p>
             </div>
-            <p class="mt-4 text-sm">© 2024 Успешный Инвестор. Все права защищены.</p>
-            <p class="text-xs"><a href="#" class="text-yellow-400 hover:underline">Политика конфиденциальности</a> | <a href="#" class="text-yellow-400 hover:underline">Юридическая информация</a></p>
-        </div>
-    </footer>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const fadeElements = document.querySelectorAll(".fade-in");
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("visible");
-                    }
-                });
-            }, { threshold: 0.1 });
-            fadeElements.forEach(el => observer.observe(el));
-        });
-        let index = 0;
-        function updateSlider() {
-            const slides = document.querySelectorAll(".testimonial-slide");
-            slides.forEach((slide, i) => {
-                slide.classList.toggle("active", i === index);
-            });
-        }
-        function nextTestimonial() {
-            const slides = document.querySelectorAll(".testimonial-slide");
-            index = (index + 1) % slides.length;
-            updateSlider();
-        }
-        function prevTestimonial() {
-            const slides = document.querySelectorAll(".testimonial-slide");
-            index = (index - 1 + slides.length) % slides.length;
-            updateSlider();
-        }
+        </footer>
 
-    </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const fadeElements = document.querySelectorAll(".fade-in");
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                        }
+                    });
+                }, { threshold: 0.1 });
+                fadeElements.forEach(el => observer.observe(el));
+            });
+            let index = 0;
+            function updateSlider() {
+                const slides = document.querySelectorAll(".testimonial-slide");
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle("active", i === index);
+                });
+            }
+            function nextTestimonial() {
+                const slides = document.querySelectorAll(".testimonial-slide");
+                index = (index + 1) % slides.length;
+                updateSlider();
+            }
+            function prevTestimonial() {
+                const slides = document.querySelectorAll(".testimonial-slide");
+                index = (index - 1 + slides.length) % slides.length;
+                updateSlider();
+            }
+
+        </script>
 
     </section>
 
-</main>
+    </main>
 </body>
+
 </html>
