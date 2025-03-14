@@ -39,6 +39,13 @@
         @media (max-width: 1024px) {
             header {
                 display: none;
+                position: absolute;
+                /* Полностью убираем из потока документа */
+            }
+
+            .hero {
+                margin-top: 0 !important;
+                /* Убираем отступ сверху */
             }
         }
 
@@ -395,10 +402,14 @@
                     body.style.opacity = "1";
                 }
 
-                // Проверяем, если сайт открыт с мобильного устройства — скрываем хедер
+                const header = document.querySelector("header");
+                const heroSection = document.querySelector(".hero");
+
+                // Проверяем, если сайт открыт с мобильного устройства — убираем хедер
                 const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
-                if (isMobile) {
-                    document.querySelector("header").style.display = "none";
+                if (isMobile && header) {
+                    header.remove(); // Полностью удаляем хедер из DOM
+                    heroSection.style.marginTop = "0"; // Поднимаем Hero вверх
                 }
 
                 // Анимация появления элементов при скролле
